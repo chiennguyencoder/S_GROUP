@@ -1,0 +1,357 @@
+:root {
+    --primary: #e52f37;
+    --secondary : #6c757d;
+    --title : #071e55;
+    --desc : #7c8595;
+    --green : #27b36a;
+}
+
+* {
+    text-decoration: none ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.15;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2;
+    margin-top: 0;
+    color: #071e55;
+    font-weight: 700;
+}
+
+p {
+	font-size: 17px;
+    line-height: 28px;
+	font-weight: 400;
+	color: #7c8595;
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+.padding-top-120 {
+    padding-top: 120px;
+}
+
+.padding-rl-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+input::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13.8px;
+    font-weight: 400;
+    color :#656565;
+}
+
+/* Header CSS */
+.header {
+    padding: 20px 16px;
+    height: 92px;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04)  ;
+    transition: all 0.25s ease-in-out 0s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #fff;
+}
+
+.navbar {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+     
+    padding: 0 15px;
+    height: 100%;
+    align-items: center;
+
+    
+
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.navbar-menuList {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-menuItem a {
+    color : #071e55;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.navbar-menuItem:hover a{
+    color :  var(--primary);
+    transition: all 0.5s ease;
+}
+
+.navbar-discoverLink a {
+    color: #fff;
+    background: #e52f37;
+    border-radius: 23px 23px;
+    padding: 12px 18px  ;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.5s ease;
+    border: 1px solid var(--primary);
+    font-size: 17px;
+
+}
+
+.navbar-discoverLink a:hover {
+    color : var(--primary);
+    background: none;
+}
+
+/* Home section css */
+.home-section {
+    position: relative;
+    z-index: 999;
+    padding-top: 140px;
+    padding-bottom: 110px;
+    background: url('https://demo.epic-webdesign.com/tf-launchpage/v1/images/bg0.jpg') top center no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.home-section--overlay {
+    background: #000;
+    opacity: 0.39;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.home-section--container {
+    display: flex;
+    
+    margin-right: -15px;
+    margin-left: -15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home-section--col {
+    max-width: 50%;
+}
+
+.home-section h1 {
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 1px 1px #373737;
+}
+
+.home-section .desc {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px #373737;
+}
+
+.home-section--col.t2  {
+    margin-left: 95px;
+    
+}
+
+.home-section--register {
+    background-color: #fff;
+    margin-top: 25px;
+    padding: 40px 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section--register h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.home-section--register p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+input.name-input {
+    background: url(../img/input-user.webp) no-repeat 12px 15px;
+}
+
+input.name-email {
+    background: url(../img/input-envelope.png) no-repeat 12px 15px;
+}
+
+select.register-input {
+    background: url(../img/input-select.png) no-repeat 12px 15px;
+
+    width: 100%;
+    height: 52px;
+    padding-left: 11%;
+    padding-right: 5%;
+    margin-bottom: 15px;
+    color: #555  ;
+    border: 1px solid #f1f1f1  ;
+    background-color: #f9f9f9  ;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px  ;
+}
+
+input.register-input {
+    width: 100%  ;
+    height: 52px  ;
+    padding-left: 11%  ;
+    padding-right: 5%  ;
+    margin-bottom: 15px  ;
+    color: #555  ;
+    border: 1px solid #f1f1f1  ;
+    background-color: #f9f9f9  ;
+    font-size: 16px  ;
+    border-radius: 5px 5px 5px 5px  ;
+}
+
+.register-submit {
+    background: #e52f37;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 535px;
+    padding: 16px 0;
+    text-transform: uppercase;
+    border-radius: 3px 3px;
+    transition: all .50s ease-in-out;
+    line-height: 21px;
+}
+
+.register-submit:hover {
+    background: var(--green);
+}
+
+
+.register-form-terms {
+    margin: 12px 0 5px 0!important;
+    font-size: 14px !important;
+}
+
+.video-popup {
+    display: flex;
+    align-items: center;
+
+}
+
+.video-popup__playbtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    color : var(--primary);
+    background: #fff;
+    position: relative;
+
+}
+
+.video-popup__playbtn i {
+    font-size: 30px;
+    line-height: 60px;
+    color: #e52a3d;
+    margin-left: 18px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.video-popup__playbtn::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -52.222%;
+    margin-bottom: -20%;
+    -webkit-animation: doublePulsation 1.9s ease infinite;
+    animation: doublePulsation 1.9s ease infinite;
+    z-index: 0;
+}
+
+.video-popup__text {
+    color : #fff;
+    padding: 0 0 0 20px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@keyframes doublePulsation{
+    0% {
+        -webkit-transform: scale(1.0, 1.0);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 0.55;
+    }
+    100% {
+        -webkit-transform: scale(1.3, 1.3);
+        opacity: 0.0;
+    }
+}
