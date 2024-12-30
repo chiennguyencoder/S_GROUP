@@ -1,0 +1,160 @@
+:root {
+    --primary: #e52f37;
+    --secondary : #6c757d;
+    --title : #071e55;
+    --desc : #7c8595;
+    --green : #27b36a;
+    --about-bg : #f1faff;
+    --blue : #1e90ff;
+    --red : #e52f37;
+}
+
+* {
+    text-decoration: none ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.15;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+/* ========================================================== */
+/* 			             1. Header CSS                        */
+/* ========================================================== */
+.header {
+    padding: 20px 16px;
+    height: 92px;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04)  ;
+    transition: all 0.25s ease-in-out 0s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #fff;
+}
+
+.navbar {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+     
+    height: 100%;
+    align-items: center;
+
+    
+
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 42px;
+    padding: 5px 0;
+}
+
+.navbar-menuList {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-menuItem a {
+    color : #071e55;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.navbar-menuItem:hover a{
+    color :  var(--primary);
+    transition: all 0.5s ease;
+}
+
+.navbar-discoverLink a {
+    color: #fff;
+    background: #e52f37;
+    border-radius: 23px 23px;
+    padding: 12px 18px  ;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.5s ease;
+    border: 1px solid var(--primary);
+    font-size: 17px;
+    line-height: 30px;
+
+}
+
+.navbar-discoverLink a:hover {
+    color : var(--primary);
+    background: none;
+}
+
+.navbar-toggler {
+    display: none;
+    padding: 4px 12px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: transparent;
+    border-radius: .25rem;
+    border: 1px solid var(--primary);
+    color : var(--primary);
+    width: 52px;
+    height: 36px;
+}
+
+
+
+@media (max-width : 992px) {
+    .navbar-menuList {
+        display: none;
+    }
+    .navbar-toggler {
+        display: inline-block;
+    }
+}
+
+
+
+@media (min-width: 567px) {
+    .container {
+        max-width: 540px;
+        /* padding: 0; */
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        /* padding: 0; */
+    }
+}
+
+@media (min-width : 1200px) {
+    .container {
+        max-width: 1140px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
