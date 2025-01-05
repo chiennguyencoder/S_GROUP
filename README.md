@@ -5,7 +5,7 @@
 
 [Link buổi 3 ](https://chiennguyencoder.github.io/S_GROUP/Buoi3)
 
-[Link buổi 4 - Animation](https://chiennguyencoder.github.io/S_GROUP/Buoi4/Animation)
+[Link buổi 4 - Animation](https://chiennguyencoder.github.io/S_GROUP/Buoi4/Animation) | 
 [Link buổi 4 - Transition](https://chiennguyencoder.github.io/S_GROUP/Buoi4/Transition)
 
 
